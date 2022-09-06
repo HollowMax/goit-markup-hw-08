@@ -1,7 +1,7 @@
 :root {
   --main-blue: #2196f3;
   --main-black: #212121;
-  --contacts-color: #757575;
+  --contacts-color: #75757555;
 }
 
 body {
@@ -284,8 +284,6 @@ ul {
 
   font-weight: 500;
   font-size: 16px;
-
-  margin-top: 30px;
 }
 
 .team-list .position {
@@ -299,7 +297,12 @@ ul {
 }
 
 .team-list .team-card {
-  margin: 30px auto;
+  padding: 30px 70px;
+}
+
+.team-list .team-card.card-even {
+  padding-left: 62px;
+  padding-right: 62px;
 }
 
 /* Футер */
