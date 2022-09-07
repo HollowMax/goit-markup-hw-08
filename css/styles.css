@@ -1,7 +1,7 @@
 :root {
   --main-blue: #2196f3;
   --main-black: #212121;
-  --contacts-color: #75757555;
+  --contacts-color: #757575;
 }
 
 body {
@@ -287,6 +287,10 @@ ul {
 
 .team-list > * {
   background-color: #fff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .team-header {
@@ -307,12 +311,7 @@ ul {
 }
 
 .team-list .team-card {
-  padding: 30px 70px;
-}
-
-.team-list .team-card.card-even {
-  padding-left: 62px;
-  padding-right: 62px;
+  padding: 30px 10px;
 }
 
 /* Футер */
