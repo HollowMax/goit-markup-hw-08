@@ -149,6 +149,7 @@ ul {
 .contacts .link:focus,
 .contacts .link:hover,
 .contacts .link:hover .contacts-link,
+.contacts .link:focus .contacts-link,
 .navigation .link.current {
   color: var(--main-blue);
 
@@ -166,7 +167,8 @@ ul {
   padding-bottom: 200px;
   background-image: url('../images/project-building.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .hero,
@@ -207,7 +209,8 @@ ul {
   border-radius: 4px;
 }
 
-.hero .hero-btn:hover {
+.hero .hero-btn:hover,
+.hero .hero-btn:focus {
   color: var(--main-blue);
   background-color: #fff;
 }
@@ -346,7 +349,8 @@ ul {
   margin: 16px 22px 0;
 }
 
-.team-networks-list > * {
+.team-networks-list a {
+  display: block;
   border-radius: 50%;
 }
 
@@ -355,9 +359,13 @@ ul {
   padding: 12px;
 }
 
-.team-networks-list > *:hover,
-.team-networks-list > *:focus {
+.team-networks-list a:hover,
+.team-networks-list a:focus {
   background-color: var(--main-blue);
+}
+
+.team-networks-list a:focus .team-networks,
+.team-networks-list a:focus .team-networks {
   fill: #fff;
 }
 
@@ -379,7 +387,7 @@ ul {
 }
 
 .customers-logo .customers-image:hover,
-.customers-logo .customers-image:focus {
+.customers-logo .custumers-link:focus .customers-image {
   fill: var(--main-blue);
 }
 
@@ -465,7 +473,8 @@ ul {
   gap: 10px;
 }
 
-.footer-links .footer-networks-list > * {
+.footer-links .footer-networks-list a {
+  display: block;
   background-color: #ffffff1a;
   border-radius: 50%;
 }
@@ -476,8 +485,8 @@ ul {
   fill: #fff;
 }
 
-.footer-links .footer-networks-list > *:hover,
-.footer-links .footer-networks-list > *:focus {
+.footer-links .footer-networks-list a:hover,
+.footer-links .footer-networks-list a:focus {
   background-color: var(--main-blue);
 }
 
