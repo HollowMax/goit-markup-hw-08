@@ -141,6 +141,8 @@ ul {
 
 .contacts .link {
   color: var(--contacts-color);
+  display: flex;
+  align-items: center;
 }
 
 .navigation .link:hover,
@@ -242,12 +244,14 @@ ul {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.advantage-list .advantage-image {
+.advantage-list .advantage-bg {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
 
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -351,46 +355,29 @@ ul {
 }
 
 .team-networks-list a {
-  display: block;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
   border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .team-networks-list .team-networks {
   fill: var(--main-gray);
-  padding: 12px;
 }
 
 .team-networks-list a:hover,
-.team-networks-list a:focus {
-  background-color: var(--main-blue);
-}
-
-.team-networks-list a:focus .team-networks,
+.team-networks-list a:focus,
+.team-networks-list a:hover .team-networks,
 .team-networks-list a:focus .team-networks {
-  fill: #fff;
-}
-
-.team-networks-list .team-networks:hover,
-.team-networks-list .team-networks:focus {
+  background-color: var(--main-blue);
   fill: #fff;
 }
 
 /* Клієти */
-
-.customers .customers-logo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.customers-logo .customers-image {
-  padding: 16px 32px;
-  fill: var(--main-gray);
-}
-
-.customers-logo .customers-image:hover,
-.customers-logo .custumers-link:focus .customers-image {
-  fill: var(--main-blue);
-}
 
 .customers .customers-header {
   font-size: 36px;
@@ -400,8 +387,15 @@ ul {
   margin-bottom: 50px;
 }
 
+.customers .customers-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .customers .customers-logo a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 170px;
   height: 92px;
@@ -410,9 +404,16 @@ ul {
   border-radius: 4px;
 }
 
+.customers-logo .customers-image {
+  fill: var(--main-gray);
+}
+
 .customers .customers-logo a:hover,
-.customers .customers-logo a:focus {
+.customers .customers-logo a:focus,
+.customers-logo .custumers-link:hover .customers-image,
+.customers-logo .custumers-link:focus .customers-image {
   border-color: var(--main-blue);
+  fill: var(--main-blue);
 }
 
 /* Футер */
@@ -475,14 +476,17 @@ ul {
 }
 
 .footer-links .footer-networks-list a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  width: 44px;
   background-color: #ffffff1a;
   border-radius: 50%;
 }
 
 .footer-networks-list .footer-social-network {
-  padding: 12px;
-
   fill: #fff;
 }
 
@@ -532,6 +536,13 @@ ul {
   justify-content: space-between;
 }
 
+.main-list .portfolio-link {
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+}
+
 .portfolio-main .list-text {
   padding: 20px 24px;
 
@@ -548,8 +559,8 @@ ul {
   margin-bottom: 30px;
 }
 
-.portfolio-main .main-list > *:hover,
-.portfolio-main .main-list > *:focus {
+.main-list .portfolio-link:hover,
+.main-list .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
