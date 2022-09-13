@@ -385,6 +385,19 @@
             </li>
           </ul>
         </div>
+         <div class="footer-input">
+          <span class="link-text">Підпишіться на розсилку</span>
+          <form class="main-form">
+           <label>
+             <input class="main-input" type="email" name="email" placeholder="E-mail">
+           </label>
+            <button class="subscribe-button" type="submit">Підписатися
+              <svg class="send-svg" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -396,6 +409,50 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
           </button>
+          <form class="backdrop-form">
+            <p class="modal-header">Залиште свої дані, ми вам передзвонимо</p>
+            <label class="bd-form-text">Ім'я
+              <div class="svg-rel">
+                
+              <input class="com-fild" type="text" name="username">
+              <svg class="modal-svg" height="18" width="18">
+                <use href="./images/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+              </div>
+            </label>
+            <label class="bd-form-text">Телефон
+              <div class="svg-rel">
+                
+              <input class="com-fild" type="tel" name="phone_number">
+              <svg class="modal-svg" height="18" width="18">
+                <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+              </div>
+            </label>
+            <label class="bd-form-text">Пошта
+              <div class="svg-rel">
+                
+              <input class="com-fild" type="email" name="email">
+              <svg class="modal-svg" height="18" width="18">
+                <use href="./images/symbol-defs.svg#icon-email-black"></use>
+              </svg>
+              </div>
+            </label>
+            <label class="bd-form-text">Коментар
+              <textarea class="backdrop-area" placeholder="Введіть текст"></textarea>
+            </label>
+            <label class="bd-check-text">
+              <input class="checkbox"  type="checkbox" name="user_conditions">
+                <svg class="custom-svg" width="16" height="15">
+                  <use class="customcb" href="./images/symbol-defs.svg#icon-checkbox"></use>
+                  <use class="check" href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+                Погоджуюся з розсилкою та приймаю
+                <a class="conditions" target="_blank" href="" rel="noopener noreferrer"> Умови договору</a>
+
+            </label>
+            <button class="bd-btn" type="submit">Відправити</button>
+          </form>
         </div>
       </div>
     </section>
