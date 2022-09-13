@@ -314,10 +314,14 @@ ul {
   list-style: none;
 }
 
-.work-label {
+.work-list > * {
   position: relative;
+}
 
-  height: 70px;
+.work-label {
+  position: absolute;
+
+  width: 100%;
 
   color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -326,8 +330,9 @@ ul {
   text-transform: uppercase;
 
   padding-top: 27px;
+  padding-bottom: 27px;
 
-  transform: translatey(-100%);
+  bottom: 0;
 }
 
 /* Команда */
