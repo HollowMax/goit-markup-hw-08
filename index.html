@@ -402,60 +402,59 @@
       </div>
     </footer>
 
-    <section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-button" data-modal-close>
-            <svg class="modal-cross" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-close"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-cross" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="backdrop-form">
+          <p class="modal-header">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="bd-form-text top-form" for="username">Ім'я </label>
+          <div class="svg-rel">
+            <input class="com-fild" type="text" name="username" id="username" />
+            <svg class="modal-svg" height="18" width="18">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
-          </button>
-          <form class="backdrop-form">
-            <p class="modal-header">Залиште свої дані, ми вам передзвонимо</p>
-            <label class="bd-form-text top-form" for="username">Ім'я </label>
-            <div class="svg-rel">
-              <input class="com-fild" type="text" name="username" id="username" />
-              <svg class="modal-svg" height="18" width="18">
-                <use href="./images/symbol-defs.svg#icon-person-black"></use>
-              </svg>
-            </div>
+          </div>
 
-            <label class="bd-form-text" for="phone_number">Телефон</label>
-            <div class="svg-rel">
-              <input class="com-fild" type="tel" name="phone_number" id="phone_number" />
-              <svg class="modal-svg" height="18" width="18">
-                <use href="./images/symbol-defs.svg#icon-phone-black"></use>
-              </svg>
-            </div>
+          <label class="bd-form-text" for="phone_number">Телефон</label>
+          <div class="svg-rel">
+            <input class="com-fild" type="tel" name="phone_number" id="phone_number" />
+            <svg class="modal-svg" height="18" width="18">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </div>
 
-            <label class="bd-form-text" for="modal_email">Пошта</label>
-            <div class="svg-rel">
-              <input class="com-fild" type="email" name="email" id="modal_email" />
-              <svg class="modal-svg" height="18" width="18">
-                <use href="./images/symbol-defs.svg#icon-email-black"></use>
-              </svg>
-            </div>
+          <label class="bd-form-text" for="modal_email">Пошта</label>
+          <div class="svg-rel">
+            <input class="com-fild" type="email" name="email" id="modal_email" />
+            <svg class="modal-svg" height="18" width="18">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </div>
 
-            <label class="bd-form-text"
-              >Коментар
-              <textarea class="backdrop-area" placeholder="Введіть текст"></textarea>
-            </label>
-            <label class="bd-check-text">
-              <input class="checkbox" type="checkbox" name="user_conditions" />
-              <svg class="custom-svg" width="16" height="15">
-                <use class="customcb" href="./images/symbol-defs.svg#icon-checkbox"></use>
-                <use class="check" href="./images/symbol-defs.svg#icon-check"></use>
-              </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a class="conditions" target="_blank" href="" rel="noopener noreferrer">
-                Умови договору</a
-              >
-            </label>
-            <button class="bd-btn" type="submit">Відправити</button>
-          </form>
-        </div>
+          <label class="bd-form-text"
+            >Коментар
+            <textarea class="backdrop-area" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="bd-check-text">
+            <input class="checkbox" type="checkbox" name="user_conditions" />
+            <svg class="custom-svg" width="16" height="15">
+              <use class="customcb" href="./images/symbol-defs.svg#icon-checkbox"></use>
+              <use class="check" href="./images/symbol-defs.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="conditions" target="_blank" href="" rel="noopener noreferrer">
+              Умови договору</a
+            >
+          </label>
+          <button class="bd-btn" type="submit">Відправити</button>
+        </form>
       </div>
-    </section>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
