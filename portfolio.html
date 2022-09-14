@@ -62,13 +62,56 @@
     <main>
       <section class="section portfolio-main">
         <div class="container">
-          <ul class="btn-list">
-            <li><button class="btn first-button" type="button">Усі</button></li>
-            <li><button class="btn" type="button">Веб-сайти</button></li>
-            <li><button class="btn" type="button">Додатки</button></li>
-            <li><button class="btn" type="button">Дизайн</button></li>
-            <li><button class="btn" type="button">Маркетинг</button></li>
-          </ul>
+          <form>
+            <ul class="btn-list">
+              <li>
+                <input
+                  class="portfolio-cb header-hidden"
+                  type="radio"
+                  name="btn-list"
+                  value="all"
+                  id="all-btn"
+                  checked
+                /><label class="btn first-button" for="all-btn">Усі</label>
+              </li>
+              <li>
+                <input
+                  class="portfolio-cb header-hidden"
+                  type="radio"
+                  name="btn-list"
+                  value="web"
+                  id="web-btn"
+                /><label class="btn" for="web-btn">Веб-сайти</label>
+              </li>
+              <li>
+                <input
+                  class="portfolio-cb header-hidden"
+                  type="radio"
+                  name="btn-list"
+                  value="app"
+                  id="app-btn"
+                /><label class="btn" for="app-btn">Додатки</label>
+              </li>
+              <li>
+                <input
+                  class="portfolio-cb header-hidden"
+                  type="radio"
+                  name="btn-list"
+                  value="design"
+                  id="design-btn"
+                /><label class="btn" for="design-btn">Дизайн</label>
+              </li>
+              <li>
+                <input
+                  class="portfolio-cb header-hidden"
+                  type="radio"
+                  name="btn-list"
+                  value="marketing"
+                  id="marketing-btn"
+                /><label class="btn" for="marketing-btn">Маркетинг</label>
+              </li>
+            </ul>
+          </form>
 
           <ul class="main-list">
             <li>
