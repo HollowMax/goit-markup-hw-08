@@ -1,0 +1,127 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__thumb {
+  width: 231px;
+}
+
+.address-list {
+  list-style: none;
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__map,
+.address-list__contacts {
+  font-style: normal;
+  text-decoration: none;
+
+  line-height: 1.71;
+}
+
+.address-list__map {
+  font-size: 14px;
+  color: #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list__contacts {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list__map:hover,
+.address-list__contacts:hover,
+.address-list__map:focus,
+.address-list__contacts:focus {
+  color: $main-blue;
+}
+
+.footer-text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.networks-list__link--grey {
+  background-color: #ffffff1a;
+}
+
+.networks-list__svg--white {
+  fill: #fff;
+}
+
+.subscribe--right {
+  margin-left: auto;
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 12px;
+}
+
+.subscribe__input {
+  height: 50px;
+  width: 358px;
+  background-color: transparent;
+  padding-left: 16px;
+
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe__input::placeholder {
+  opacity: 0.6;
+}
+
+.subscribe__btn {
+  @include btn();
+
+  letter-spacing: 0.06em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-color: $main-blue;
+
+  height: 50px;
+  width: 200px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__send-svg {
+  fill: #fff;
+  background-color: $main-blue;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__btn:hover,
+.subscribe__btn:hover .subscribe__send-svg,
+.subscribe__btn:focus .subscribe__send-svg,
+.subscribe__btn:focus {
+  color: $main-blue;
+  background-color: #fff;
+  border-color: #fff;
+  fill: $main-blue;
+}

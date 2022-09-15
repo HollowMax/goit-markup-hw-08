@@ -781,6 +781,14 @@ ul {
   margin-bottom: 20px;
 }
 
+.backdrop-area::placeholder {
+  opacity: 0.5;
+}
+
+.main-input::placeholder {
+  opacity: 0.6;
+}
+
 .bd-check-text {
   display: flex;
 
@@ -789,8 +797,6 @@ ul {
   color: #757575;
 
   align-items: center;
-
-  user-select: none;
 }
 
 .conditions {
@@ -830,6 +836,8 @@ ul {
 .custom-svg {
   margin-left: 12px;
   margin-right: 8px;
+
+  user-select: none;
 }
 
 .check {
@@ -847,6 +855,10 @@ ul {
 
 .checkbox:checked + .custom-svg .check {
   display: block;
+}
+
+.checkbox:focus + .custom-svg {
+  outline: 2px solid var(--main-blue);
 }
 
 /* Вкладка портфоліо */
