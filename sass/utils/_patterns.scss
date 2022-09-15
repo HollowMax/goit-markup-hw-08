@@ -27,3 +27,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.main-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  &--top {
+    margin-bottom: 50px;
+  }
+}
