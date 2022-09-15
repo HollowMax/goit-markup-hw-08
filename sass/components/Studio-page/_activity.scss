@@ -1,0 +1,28 @@
+//---------------------------------Діяльність---------------------------------
+.activity__list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.activity__item {
+  position: relative;
+}
+
+.activity__title {
+  position: absolute;
+
+  width: 100%;
+
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  bottom: 0;
+}

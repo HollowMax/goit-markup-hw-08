@@ -1,0 +1,86 @@
+//----------------Секція працівників--------------------------
+
+.employe {
+  font-size: 16px;
+  line-height: 1.19;
+
+  background-color: #f5f4fa;
+
+  padding-bottom: 94px;
+}
+
+.employe-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.employe-list__item {
+  background-color: #fff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employe-description {
+  padding: 30px 10px;
+}
+
+.employe-description__name {
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.employe-description__position {
+  text-align: center;
+
+  font-size: 16px;
+
+  color: $contacts-color;
+
+  margin-top: 10px;
+}
+
+.networks-list {
+  display: flex;
+  gap: 10px;
+}
+
+.networks-list--bottom {
+  margin: 16px 22px 0;
+}
+
+.networks-list__link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $main-blue;
+  }
+}
+
+.networks-list__svg {
+  fill: $main-gray;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .networks-list__link:hover &,
+  .networks-list__link:focus & {
+    background-color: $main-blue;
+    fill: #fff;
+  }
+}

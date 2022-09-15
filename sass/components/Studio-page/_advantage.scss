@@ -1,0 +1,44 @@
+// ----------------Секція переваг------------------------------
+.advantage {
+  padding-bottom: 0;
+}
+
+.advantage__list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.advantage__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.picture {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $contacts-color;
+}
