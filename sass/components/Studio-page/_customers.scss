@@ -2,6 +2,11 @@
 .customers__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
+  gap: 30px;
 }
 
 .customers__link {
@@ -9,8 +14,16 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   border: 1px solid $main-gray;
   border-radius: 4px;

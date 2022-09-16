@@ -2,17 +2,17 @@
 @import 'utils/vars';
 @import 'base/body-styles';
 
-@import 'components/header';
 @import 'base/containers';
-@import 'components/logo';
 @import 'utils/patterns';
+@import 'components/logo';
+// @import 'components/header';
 
 @import 'components/Studio-page/hero';
 @import 'components/Studio-page/advantage';
 @import 'components/Studio-page/activity';
 @import 'components/Studio-page/employe';
 @import 'components/Studio-page/customers';
-@import 'components/Studio-page/backdrop';
+// @import 'components/Studio-page/backdrop';
 
 @import 'components/Portfolio-page/portfolio-main';
 

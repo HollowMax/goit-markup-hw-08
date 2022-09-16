@@ -1,21 +1,47 @@
 // ----------------Секція переваг------------------------------
-.advantage {
-  padding-bottom: 0;
-}
 
 .advantage__list {
   display: flex;
-  justify-content: space-between;
-
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
   list-style: none;
 }
 
 .advantage__item {
-  flex-basis: calc((100% - 90px) / 4);
+  @media screen and(max-width:480px) {
+    &:not(:last-child) .advantage__text {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% - 30px);
+
+    &:nth-last-child(n + 3) .advantage__text {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .picture {
-  width: 270px;
+  max-width: 450px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
   height: 120px;
   background-color: #f5f4fa;
 
@@ -27,6 +53,10 @@
 }
 
 .advantage__title {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -37,6 +67,10 @@
 }
 
 .advantage__text {
+  max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
   font-size: 14px;
   line-height: 1.71;
 
