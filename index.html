@@ -178,15 +178,33 @@
           <h2 class="main-title main-title--top">Чим займаємось</h2>
           <ul class="activity__list">
             <li class="activity__item">
-              <img src="./images/algoritms.jpg" alt="Розробка алгоритму" width="370" />
+              <img
+                srcset="./images/algoritms.jpg 1x, ./images/algoritms@2x.jpg 2x"
+                src="./images/algoritms.jpg"
+                alt="Розробка алгоритму"
+                width="370"
+                height="auto"
+              />
               <h3 class="activity__title">Десктопні додатки</h3>
             </li>
             <li class="activity__item">
-              <img src="./images/mobileapp.jpg" alt="Розробка мобільного додатку" width="370" />
+              <img
+                srcset="./images/mobileapp.jpg 1x, ./images/mobileapp@2x.jpg 2x"
+                src="./images/mobileapp.jpg"
+                alt="Розробка мобільного додатку"
+                width="370"
+                height="auto"
+              />
               <h3 class="activity__title">Мобільні додатки</h3>
             </li>
             <li class="activity__item">
-              <img src="./images/colors.jpg" alt="Стилізація" width="370" />
+              <img
+                srcset="./images/colors.jpg 1x, ./images/colors@2x.jpg 2x"
+                src="./images/colors.jpg"
+                alt="Стилізація"
+                width="370"
+                height="auto"
+              />
               <h3 class="activity__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -198,7 +216,24 @@
           <h2 class="main-title main-title--top">Наша команда</h2>
           <ul class="employe-list">
             <li class="employe-list__item">
-              <img src="./images/demianko.jpg" alt="Ігор Дем'янко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/demianko.jpg 1x, ./images/demianko@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+
+                <source
+                  srcset="./images/demianko_t.jpg 1x, ./images/demianko_t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="./images/demianko_m.jpg 450w, ./images/demianko_m@2x.jpg 900w"
+                  sizes="450px"
+                />
+                <img class="employe-list__img" src="./images/demianko.jpg" alt="Ігор Дем'янко" />
+              </picture>
               <div class="employe-description">
                 <h3 class="employe-description__name">Ігор Дем'янко</h3>
                 <p class="employe-description__position">Product Designer</p>
@@ -249,7 +284,24 @@
               </div>
             </li>
             <li class="employe-list__item">
-              <img src="./images/repina.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="./images/repina.jpg 1x, ./images/repina@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+
+                <source
+                  srcset="./images/repina_t.jpg 1x, ./images/repina_t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="./images/repina_m.jpg 450w, ./images/repina_m@2x.jpg 900w"
+                  sizes="450px"
+                />
+                <img class="employe-list__img" src="./images/repina.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="employe-description">
                 <h3 class="employe-description__name">Ольга Рєпіна</h3>
                 <p class="employe-description__position">Frontend Developer</p>
@@ -300,7 +352,24 @@
               </div>
             </li>
             <li class="employe-list__item">
-              <img src="./images/tarasov.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/tarasov.jpg 1x, ./images/tarasov@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+
+                <source
+                  srcset="./images/tarasov_t.jpg 1x, ./images/tarasov_t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="./images/tarasov_m.jpg 450w, ./images/tarasov_m@2x.jpg 900w"
+                  sizes="450px"
+                />
+                <img class="employe-list__img" src="./images/tarasov.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="employe-description">
                 <h3 class="employe-description__name">Микола Трасов</h3>
                 <p class="employe-description__position">Marketing</p>
@@ -351,7 +420,22 @@
               </div>
             </li>
             <li class="employe-list__item">
-              <img src="./images/ermakov.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/ermakov.jpg 1x, ./images/ermakov@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  width="270" />
+
+                <source
+                  srcset="./images/ermakov_t.jpg 1x, ./images/ermakov_t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  width="354" />
+                <source
+                  srcset="./images/ermakov_m.jpg 450w, ./images/ermakov_m@2x.jpg 900w"
+                  sizes="450px" />
+
+                <img class="employe-list__img" src="./images/ermakov.jpg" alt="Михайло Єрмаков"
+              /></picture>
               <div class="employe-description">
                 <h3 class="employe-description__name">Михайло Єрмаков</h3>
                 <p class="employe-description__position">UI Designer</p>

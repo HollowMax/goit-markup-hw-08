@@ -103,6 +103,11 @@
   overflow: hidden;
 }
 
+.image-overlay__img {
+  max-width: 100%;
+  height: auto;
+}
+
 .image-overlay__thumb {
   position: absolute;
   top: 0;
