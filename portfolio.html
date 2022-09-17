@@ -19,13 +19,14 @@
   </head>
   <body>
     <!-- Верхня панель-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
-        <div class="page-header__item flex-container">
+        <div class="page-header__item flex-container" id="menu-container" data-menu>
           <nav class="flex-container">
             <a class="logo logo--start" href="./index.html">
               Web<span class="logo__main-color">Studio</span>
             </a>
+
             <ul class="navigation">
               <li class="navigation__item">
                 <a class="navigation__link" href="./index.html">Студія</a>
@@ -39,26 +40,78 @@
             </ul>
           </nav>
 
-          <ul class="contacts contacts--right">
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">
-                <svg class="contacts__svg" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-letter"></use></svg
-                >info@getstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111">
-                <svg class="contacts__svg" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="contacts--right">
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__svg contacts__letter-img">
+                    <use href="./images/symbol-defs.svg#icon-letter"></use></svg
+                  >info@getstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__svg contacts__phone-img">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="networks-list networks-list__header">
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use class="menu-btn__burg" href="images/symbol-defs.svg#icon-menu_burger"></use>
+              <use class="menu-btn__cross" href="images/symbol-defs.svg#icon-menu_close"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="section">
@@ -375,5 +428,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

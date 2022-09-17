@@ -20,13 +20,14 @@
 
   <body>
     <!-- Верхня панель-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
-        <div class="page-header__item flex-container">
+        <div class="page-header__item flex-container" id="menu-container" data-menu>
           <nav class="flex-container">
             <a class="logo logo--start" href="./index.html">
               Web<span class="logo__main-color">Studio</span>
             </a>
+
             <ul class="navigation">
               <li class="navigation__item">
                 <a class="navigation__link current-page" href="./index.html">Студія</a>
@@ -40,26 +41,78 @@
             </ul>
           </nav>
 
-          <ul class="contacts contacts--right">
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">
-                <svg class="contacts__svg" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-letter"></use></svg
-                >info@getstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111">
-                <svg class="contacts__svg" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="contacts--right">
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__svg contacts__letter-img">
+                    <use href="./images/symbol-defs.svg#icon-letter"></use></svg
+                  >info@getstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__svg contacts__phone-img">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="networks-list networks-list__header">
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="networks-list__header-item">
+                <a
+                  class="networks-list__header-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use class="menu-btn__burg" href="images/symbol-defs.svg#icon-menu_burger"></use>
+              <use class="menu-btn__cross" href="images/symbol-defs.svg#icon-menu_close"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Герой-->
@@ -397,7 +450,7 @@
       </section>
     </main>
 
-    <!--     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer__thumb">
           <a class="logo logo--down-block" href="./index.html">
@@ -425,7 +478,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__networks">
           <span class="footer-text footer-text--top">Приєднуйтесь</span>
           <ul class="networks-list">
             <li>
@@ -522,10 +575,9 @@
             </svg>
           </div>
 
-          <label class="modal-form__text"
-            >Коментар
-            <textarea class="modal-form__area" placeholder="Введіть текст"></textarea>
-          </label>
+          <label class="modal-form__text" for="modal_area">Коментар </label>
+          <textarea class="modal-form__area" id="modal_area" placeholder="Введіть текст"></textarea>
+
           <label class="agreement">
             <input class="agreement__checkbox" type="checkbox" name="user_conditions" />
             <svg class="agreement__custom-svg" width="16" height="15">
@@ -545,6 +597,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

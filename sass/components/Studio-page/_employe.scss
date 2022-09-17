@@ -59,14 +59,6 @@
   margin-top: 10px;
 }
 
-.networks-list {
-  display: flex;
-  gap: 10px;
-  @media screen and (max-width: 1200px) {
-    justify-content: center;
-  }
-}
-
 .networks-list--bottom {
   margin: 16px 112px 0;
   @media screen and (min-width: 768px) {

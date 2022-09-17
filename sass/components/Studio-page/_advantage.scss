@@ -22,15 +22,14 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc(100% - 30px);
-
-    &:nth-last-child(n + 3) .advantage__text {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
+    & .advantage__text {
+      margin-bottom: 0;
+    }
   }
 }
 
