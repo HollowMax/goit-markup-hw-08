@@ -77,14 +77,23 @@
   flex-basis: 100%;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
+    display: list-item;
   }
 }
 
 .portfolio-list__link {
   display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   color: inherit;
   text-decoration: none;
@@ -144,6 +153,8 @@
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
+
+  flex-grow: 1;
 }
 
 .portfolio-list__title {
